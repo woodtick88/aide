@@ -652,6 +652,9 @@ p
 			width: 0px
 
 .header.heder-dark-solution	
+	padding-top: 123px
+	width: 100%
+	box-sizing: border-box
 
 	.header-menu-wrapper
 
@@ -1002,8 +1005,6 @@ p
 
 //expertise-section
 
-.expertise-mobile-image
-	display: none	
 
 .expertise-wrapper	
 	margin-top: 72px
@@ -1026,7 +1027,7 @@ p
 		.title
 			font-family: Gilroy
 			font-style: normal
-			font-weight: bol
+			font-weight: bold
 			font-size: 43px;
 			line-height: 55px
 			color: #000000
@@ -1092,19 +1093,52 @@ p
 					border-top: 1px solid rgba(0,0,0,0.21)	
 
 
-.expertise-wrapper:before	
-	content: ""
-	display: block 
-	width: 511px
-	height: 537px 
-	background: url(../img/index-page/expertise-background.jpg) center no-repeat
-	background-size: cover
-	position: absolute
-	left: -120px
-	top: 87px
-	z-index: 1
-	box-shadow: 36px 52px 140px 15px rgba(71,153,213, 0.33)
+	.expertise-wrapper-background	
+		display: block 
+		width: 511px
+		height: 537px 
+		background-size: cover
+		position: absolute
+		left: -120px
+		top: 87px
+		z-index: 1
+		box-shadow: 36px 52px 140px 15px rgba(71,153,213, 0.33)
 
+		img 
+			display: block 
+			width: 100%
+			height: 100%
+
+.expertise-container.expertise-container-2
+	background: #F4F4F4
+
+	.expertise-wrapper
+		background: #F4F4F4
+		margin-top: 0
+		padding-right: 0
+		padding-top: 170px
+		padding-bottom: 67px
+		
+
+		.expertise
+			width: 588px
+
+			.description	
+				max-width: 100%	
+				margin-bottom: 40px
+
+			.expertise-lists-wrapper
+				padding-top: 10px	
+
+				.expertise-list
+					width: 100%
+
+		.expertise-wrapper-background	
+			display: block 
+			width: 647px
+			height: 555px 
+			left: -134px
+			top: 75px
 
 
 //about-services-section
@@ -1424,8 +1458,7 @@ p
 
 // breadcrumbs
 
-.breadcrumbs
-	padding-top: 123px
+.breadcrumbs	
 
 	.breadcrumbs-list
 		display: flex 
@@ -1447,7 +1480,7 @@ p
 			content: ""
 			display: block 
 			position: absolute	
-			background: url(./img/solutions-page/breadcrumbs-list-link-icon.svg) center no-repeat
+			background: url(../img/solutions-page/breadcrumbs-list-link-icon.svg) center no-repeat
 			width: 11px
 			height: 6px
 			right: 13px
@@ -1462,13 +1495,164 @@ p
 			line-height: 22px
 			color: #000000
 
+		.breadcrumbs-list-item.current-item:before
+			display: none			
 
 
+// solution-header
+
+.solutions-header-wrapper
+	overflow: hidden
+
+	.solutions-header
+		padding-top: 68px
+		padding-bottom: 68px
+		position: relative		
+
+		.title
+			font-family: Gilroy
+			font-style: normal
+			font-weight: bold
+			font-size: 63px
+			line-height: 77px
+			color: #161616
+			margin-bottom: 38px
+			max-width: 880px
+
+		.description
+			font-family: Gilroy
+			font-style: normal
+			font-weight: normal
+			font-size: 15px
+			line-height: 27px
+			color: #3C3D4A
+			opacity: 0.8	
+			max-width: 692px
+
+		.solutions-header-icon	
+			position: absolute	
+			background: url(../img/solutions-page/solutions-header-icon.svg) center no-repeat
+			width: 320px
+			height: 320px
+			border: 1px solid #ffffff
+			border-radius: 50%
+			top: 25px
+			right: 40px
 
 
+	.solutions-header:before
+		content: ""
+		display: block 
+		position: absolute
+		width: 1101.69px
+		height: 1101.69px
+		background: rgba(92, 113, 209, 0.3)
+		filter: blur(165px)
+		transform: rotate(165deg)
+		top: -258px 
+		right: -450px
 
 
+// content-image
 
+.content-image
+	position: relative	
+	width: 100% 
+	height: 380px	
+	overflow: hidden
+
+	img 
+		display: block 
+		width: 100% 
+		height: 100%
+		min-width: 1600px 
+		position: absolute
+		top: 0
+		left: 50% 
+		transform: translateX(-50%)
+
+
+// stages
+
+.stages-wrapper
+	padding-top: 124px
+	padding-bottom: 118px
+	overflow: hidden	
+
+	.stages
+		display: flex 
+		justify-content: space-between
+		flex-wrap: wrap
+		position: relative
+
+		.stages-item
+			width: 314px
+
+			.stages-item-number
+				font-family: Gilroy
+				font-style: normal
+				font-weight: normal
+				font-size: 63px
+				line-height: 50px
+				color: #3C86BC
+				margin-bottom: 26px
+
+			.stages-item-description
+				font-family: Gilroy
+				font-style: normal
+				font-weight: 600
+				font-size: 22px
+				line-height: 145.6%
+				color: #0A083B
+
+	.stages:before
+		content: ""
+		display: block 
+		position: absolute
+		width: 1101.69px
+		height: 1101.69px
+		background: rgba(60, 134, 188, 0.23)
+		filter: blur(165px)
+		transform: rotate(165deg)	
+		left: -189px
+		top: -49px		
+
+
+// services-tabs	
+
+
+.services-tabs-wrapper
+	background: #162454
+	padding-top: 204px
+
+	.services-tabs
+
+		.title
+			font-family: Gilroy
+			font-style: normal
+			font-weight: bold
+			font-size: 43px
+			line-height: 55px
+			text-align: center
+			color: #FFFFFF
+			position: relative
+			margin-bottom: 53px
+
+		.title:before 
+			content: ""
+			display: block
+			position: absolute
+			width: 65px
+			height: 65px
+			background-image: url(../img/solutions-page/services-tabs-icon.svg)
+			background-position: center
+			background-repeat: no-repeat
+			background-color: #4799D5
+			box-shadow: 0px 4px 44px rgba(60, 134, 188, 0.3)
+			border-radius: 50%
+			left: 50%
+			top: -94px
+			transform: translateX(-50%)
 
 
 

@@ -79,13 +79,50 @@
 							font-size: 15px
 							line-height: 24px
 
-	.expertise-wrapper:before	
-		width: 330px
-		height: 366px 
-		left: -75px
-		top: 75px
-		box-shadow: 36px 52px 92px -2px rgba(71,153,213,.33)
+		.expertise-wrapper-background	
+			width: 330px
+			height: 366px 
+			left: -75px
+			top: 75px
+			box-shadow: 36px 52px 92px -2px rgba(71,153,213,.33)
 
+	.expertise-container.expertise-container-2
+		background-color: #E5E5E5
+
+		.expertise-wrapper
+			position: relative
+			padding-left: 64px
+			padding-right: 64px
+			padding-top: 63px
+			padding-bottom: 60px
+			margin-bottom: 100px
+			box-sizing: border-box
+			justify-content: flex-start
+			flex-direction: column
+
+			.expertise
+				width: 100%
+				box-sizing: border-box
+
+				.title
+					align-self: flex-start
+
+				.description
+					margin-bottom: 36px	
+
+				.expertise-lists-wrapper
+					padding-top: 24px	
+	
+
+			.expertise-wrapper-background	
+				position: relative	
+				left: -128px
+				top: 0px
+				width: calc(100% + 128px)
+				height: auto
+				flex: 0 0 auto
+				margin-bottom: 158px
+				box-shadow: 36px -3px 137px -26px rgba(71,153,213,.33)
 
 				
 	.footer
@@ -331,7 +368,89 @@
 				padding-top: 32px
 				padding-bottom: 33px			
 
-			
+	.header.heder-dark-solution	
+		padding-top: 133px
+
+	.breadcrumbs
+
+		.breadcrumbs-list
+
+			.breadcrumbs-list-item
+				padding-right: 30px
+
+				.breadcrumbs-list-link
+					font-size: 13px
+					line-height: 22px
+
+			.breadcrumbs-list-item:before 
+				right: 12px		
+
+			.breadcrumbs-list-item.current-item		
+				font-size: 13px
+				line-height: 22px	
+
+	.solutions-header-wrapper
+
+		.solutions-header
+			padding-top: 72px
+			padding-bottom: 98px
+
+			.title
+				margin-bottom: 35px
+				max-width: 100%
+
+			.description
+				font-size: 16px
+				line-height: 30px	
+				max-width: 406px
+
+			.solutions-header-icon	
+				top: inherit 
+				bottom: -120px
+				right: -138px
+
+		.solutions-header:before
+			top: 21px 
+			right: -503px		
+
+	.stages-wrapper
+		padding-top: 100px
+		padding-bottom: 105px
+
+		.stages
+
+			.stages-item
+				width: 100%
+				margin-bottom: 70px
+				display: flex
+
+				.stages-item-number
+					font-size: 62px
+					line-height: 50px
+					margin-right: 48px
+
+				.stages-item-description
+					font-size: 20px
+					line-height: 145.6%
+					max-width: 410px	
+
+			.stages-item:last-child	
+				margin-bottom: 0
+
+		.stages:before	
+			width: 735.81px
+			height: 735.81px
+			background: rgba(60, 134, 188, 0.23)
+			filter: blur(165px)
+			transform: rotate(174.42deg)
+			left: -83px
+			top: 206px		
+
+
+
+
+
+
 
 
 
@@ -620,6 +739,8 @@
 		padding-bottom: 69px
 		padding-right: 0
 		padding-left: 0
+		flex-direction: column
+		justify-content: flex-start
 
 		.expertise
 			width: 100%
@@ -664,10 +785,58 @@
 					.list-item:first-child 
 						border-top: 1px solid rgba(0,0,0,0.21)	
 
+		.expertise-wrapper-background	
+			display: block
+			position: relative	
+			left: -36px
+			top: 0px
+			width: calc(100% + 72px)
+			height: auto
+			flex: 0 0 auto
+			margin-bottom: 165px
+			box-shadow: -1px 49px 80px -26px rgba(71,153,213,.33)
 
+	.expertise-container.expertise-container-2
+		background: #F4F4F4
 
-	.expertise-wrapper:before	
-		display: none
+		.expertise-wrapper
+			padding-left: 0
+			padding-right: 0
+			padding-top: 0
+			padding-bottom: 58px
+			margin-bottom: 42px
+
+			.expertise
+
+				.title
+					font-size: 24px
+					line-height: 36px
+					margin-bottom: 27px
+
+				.description
+					font-size: 13px
+					line-height: 24px
+					margin-bottom: 40px	
+
+				.expertise-lists-wrapper
+					padding-top: 10px	
+
+					.expertise-list
+
+						.list-item
+
+							.list-link
+								font-size: 15px
+								line-height: 24px
+	
+
+			.expertise-wrapper-background	
+				display: block
+				position: relative	
+				left: -36px
+				width: calc(100% + 72px)
+				margin-bottom: 156px
+				box-shadow: -1px 49px 80px -26px rgba(71,153,213,.33)		
 
 	.about-services
 		transform: translateX(calc(-50% + 36px))
@@ -864,6 +1033,83 @@
 						font-size: 13px
 						line-height: 146.6%
 						margin-left: 0	
+
+	.header.heder-dark-solution	
+		padding-top: 70px
+
+	.breadcrumbs
+		display: none	
+
+	.solutions-header-wrapper
+
+		.solutions-header
+			padding-top: 61px
+			padding-bottom: 162px
+
+			.title				
+				font-size: 34px
+				line-height: 45px
+
+			.description
+				font-size: 13px
+				line-height: 24px	
+				max-width: 100%
+
+			.solutions-header-icon	
+				top: inherit 
+				bottom: -155px
+				right: inherit
+				left: 50%
+				margin-left: -50%
+				transform: scale(0.77)
+				background: url(../img/solutions-page/solutions-header-icon.svg) center 76px no-repeat
+
+		.solutions-header:before
+			top: 10px 
+			right: -597px
+
+	.content-image
+		height: 314px	
+
+		img 
+			height: 344px
+
+	.stages-wrapper
+		padding-top: 86px
+		padding-bottom: 76px
+
+		.stages
+
+			.stages-item
+				margin-bottom: 55px
+				flex-direction: column
+
+				.stages-item-number
+					font-size: 48px
+					line-height: 50px
+					margin-right: 0
+					margin-bottom: 16px
+
+				.stages-item-description
+					font-size: 19px
+					line-height: 149.6%
+					max-width: 100%
+					padding-right: 44px
+					box-sizing: border-box	
+
+			.stages-item:last-child	
+				margin-bottom: 0
+
+		.stages:before	
+			width: 728.96px
+			height: 728.96px
+			background: rgba(60, 134, 188, 0.23)
+			filter: blur(165px)
+			transform: rotate(165deg)
+			left: -211px
+			top: 422px
+
+
 
 
 

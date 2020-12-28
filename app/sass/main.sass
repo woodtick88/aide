@@ -1624,8 +1624,10 @@ p
 .services-tabs-wrapper
 	background: #162454
 	padding-top: 204px
+	overflow: hidden
 
 	.services-tabs
+		position: relative
 
 		.title
 			font-family: Gilroy
@@ -1654,6 +1656,118 @@ p
 			top: -94px
 			transform: translateX(-50%)
 
+		.gallery-tabs	
+			display: flex 
+			justify-content: space-between			
+
+			.gallery-tabs-buttons
+				width: 510px
+				flex: 0 0 auto
+				margin-right: 31px
+
+				.tab
+					display: block 
+					box-sizing: border-box
+					font-family: Gilroy
+					font-style: normal
+					font-weight: normal
+					font-size: 20px
+					line-height: 24px
+					color: #FFFFFF
+					background: rgba(244, 244, 244, 0.04)
+					margin-bottom: 11px
+					padding-left: 35px
+					padding-top: 20px
+					padding-bottom: 20px
+					padding-right: 50px
+					cursor: pointer
+					transition: 0.3s
+					position: relative
+
+				.tab.active
+					background: #4799D5	
+
+				.tab.active:before
+					content: ""
+					display: block
+					position: absolute
+					width: 65px
+					height: 65px
+					background: url(../img/solutions-page/services-tabs-button-icon.svg) center no-repeat
+					right: 25px
+					top: 50%
+					transform: translateY(-50%)
+
+			.tab-content
+				flex-grow: 1
+				outline: 1px solid green
+
+				.tab_item	
+
+					.tab_item-image
+						display: block
+						width: 100%
+						height: auto
+
+					.tab_item-description						
+						background: rgba(48, 63, 115, 0.91)
+						width: calc(100% + 120px)
+						box-sizing: border-box
+						padding-right: 120px
+						padding-left: 68px
+						padding-top: 45px
+						padding-bottom: 39px
+						position: relative
+						left: 46px
+						top: -106px
+
+						.description-title	
+							font-family: Gilroy
+							font-style: normal
+							font-weight: 600
+							font-size: 43px
+							line-height: 55px
+							color: #FFFFFF
+							margin-bottom: 24px
+
+						.description-text	
+							font-family: Gilroy
+							font-style: normal
+							font-weight: normal
+							font-size: 15px
+							line-height: 30px
+							color: #FFFFFF
+							opacity: 0.8
+							margin-bottom: 48px
+
+						.description-submit	
+							display: inline-block
+							font-family: Gilroy
+							font-style: normal
+							font-weight: bold
+							font-size: 16px
+							line-height: 19px
+							text-align: center
+							color: #FFFFFF
+							box-sizing: border-box
+							border: 3px solid rgba(255, 255, 255, 0.5)
+							padding-left: 46px
+							padding-right: 46px
+							padding-top: 22px
+							padding-bottom: 22px
+							min-width: 289px
+							cursor: pointer
+
+	.services-tabs:before
+		content: ""
+		display: block 
+		position: absolute
+		background: url(../img/solutions-page/services-tabs-background.png) center no-repeat
+		background-size: cover
+		width: 803px
+		height: 885px
+		top: -240px
+		right: -11px
 
 
 

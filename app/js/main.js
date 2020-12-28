@@ -211,6 +211,20 @@ $(function() {
 
 	};
 
+
+	
+	// tabs on page gallery
+
+	if ( $('.tab_item').length ) {
+
+		$(".tab_item").not(":first").fadeOut();
+		$(".gallery-tabs-buttons .tab").click(function() {
+			$(".gallery-tabs-buttons .tab").removeClass("active").eq($(this).index()).addClass("active");
+			$(".tab_item").fadeOut(200).eq($(this).index()).fadeIn()
+		}).eq(0).addClass("active"); 
+
+	};
+
 	
 
 

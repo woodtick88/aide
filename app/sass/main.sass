@@ -732,6 +732,12 @@ p
 					.icon-wrapper
 						background: url(../img/header/back-call-icon.svg) center no-repeat	
 
+.header.heder-dark-solution-2	
+	padding-top: 123px
+	width: 100%
+	box-sizing: border-box	
+	background: #162454
+
 // about-service-support-section		
 
 
@@ -1056,6 +1062,27 @@ p
 		filter: blur(165px)
 		transform: matrix(0.19, 0.98, -0.98, 0.2, 0, 0)
 
+.offer-wrapper.offer-wrapper-2	
+
+	.offer
+		padding-top: 90px
+		padding-bottom: 7px
+
+		.title
+			margin-bottom: 18px
+
+		.title-description	
+			font-family: Gilroy
+			font-style: normal
+			font-weight: normal
+			font-size: 15px
+			line-height: 27px
+			color: #FFFFFF
+			opacity: 0.8
+			max-width: 496px
+			margin-bottom: 51px
+
+
 
 //expertise-section
 
@@ -1357,6 +1384,10 @@ p
 		transform: matrix(0.18, 0.99, -0.97, 0.21, 0, 0)
 		z-index: 1
 
+.submit-application-wrapper.submit-application-wrapper-2
+
+	.submit-application
+		padding-bottom: 74px
 
 //footer
 
@@ -1551,6 +1582,22 @@ p
 
 		.breadcrumbs-list-item.current-item:before
 			display: none			
+
+.breadcrumbs.breadcrumbs-dark
+	background: #162454
+
+	.breadcrumbs-list
+
+		.breadcrumbs-list-item
+
+			.breadcrumbs-list-link
+				color: #FFFFFF
+
+		.breadcrumbs-list-item:before 
+			background: url(../img/cases-page/breadcrumbs-list-link-icon-white.svg) center no-repeat
+
+		.breadcrumbs-list-item.current-item
+			color: #FFFFFF			
 
 
 // solution-header
@@ -1822,6 +1869,356 @@ p
 		height: 885px
 		top: -240px
 		right: -11px
+
+
+//cases-page
+
+
+// cases-header	
+
+
+.cases-header-wrapper
+	padding-top: 121px
+	padding-bottom: 243px
+	background: #162454
+	overflow: hidden
+
+	.cases-header
+		display: flex
+		position: relative
+
+		.title
+			font-family: Gilroy
+			font-style: normal
+			font-weight: bold
+			font-size: 63px
+			line-height: 77px
+			color: #FFFFFF
+			max-width: 560px
+			margin-right: 40px
+
+		.description
+			font-family: Gilroy
+			font-style: normal
+			font-weight: normal
+			font-size: 15px
+			line-height: 27px
+			color: #FFFFFF
+			opacity: 0.8
+			max-width: 440px
+			align-self: flex-end
+
+	.cases-header:before 
+		content: ""
+		display: block
+		position: absolute
+		width: 1101.69px
+		height: 1101.69px
+		background: rgba(92, 113, 209, 0.3)
+		filter: blur(165px)
+		transform: rotate(104.78deg)
+		top: -7px
+		left: -604px
+
+	.cases-header:after 
+		content: ""
+		display: block		
+		position: absolute
+		width: 1101.69px
+		height: 1101.69px
+		background: rgba(92, 113, 209, 0.26)
+		filter: blur(165px)
+		transform: rotate(104.78deg)
+		top: -520px
+		right: -625px	
+
+
+
+// cases-list
+
+.cases-list-wrapper
+	margin-top: -176px
+	margin-bottom: 75px
+	overflow: hidden
+
+	.cases-list
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap 		
+
+		.cases-list-item
+			width: calc(50% - 10px)
+			box-sizing: border-box
+			border: 1px solid #000000
+			margin-bottom: 25px
+
+			.item-image
+				display: block 
+				width: 100%
+				height: auto
+
+			.item-content
+				box-sizing: border-box
+				padding-top: 51px
+				padding-bottom: 49px
+				padding-left: 65px
+				padding-right: 98px				
+
+				.item-title
+					font-family: Gilroy
+					font-style: normal
+					font-weight: bold
+					font-size: 27px
+					line-height: 149.6%
+					color: #161616
+					margin-bottom: 33px
+
+				.item-about					
+					font-family: Gilroy
+					font-style: normal
+					font-weight: normal
+					font-size: 15px
+					line-height: 27px
+					color: #000000
+					opacity: 0.6
+					margin-bottom: 33px
+
+				.item-link
+					display: block
+					font-family: Gilroy
+					font-style: normal
+					font-weight: 600
+					font-size: 14px
+					line-height: 17px
+					color: #3C86BC
+					position: relative	
+				
+				.item-link:before
+					content: ""
+					display: block
+					position: absolute
+					width: 54px
+					height: 54px;
+					background: url(../img/solutions-page/about-advantages-link-icon.svg) center no-repeat
+					right: -62px
+					top: 50%
+					-webkit-transform: translateY(-50%)
+					-ms-transform: translateY(-50%)
+					transform: translateY(-50%)
+					border: 1px solid #3c86bc
+					border-radius: 50%	
+
+	.cases-list:before 
+		content: ""
+		display: block
+		position: absolute
+		width: 1101.69px
+		height: 1101.69px
+		background: rgba(60, 134, 188, 0.23)
+		filter: blur(165px)
+		transform: rotate(165deg)
+		top: 621px
+		right: -431px
+
+
+// contacts-section
+
+
+.contacts-section-wrapper	
+	background: #162454
+	overflow: hidden
+
+	.contacts-section
+		position: relative
+		margin: 0 auto
+		margin-left: 50%
+		transform: translateX(calc(-50% + 59px))
+		width: 100%
+		max-width: 1318px
+		display: flex
+		box-sizing: content-box
+
+		.contacts-information	
+			max-width: 749px
+			flex: 0 0 auto
+			padding-top: 122px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			position: relative
+
+			.contacts-title
+				font-family: Gilroy
+				font-style: normal
+				font-weight: bold
+				font-size: 63px
+				line-height: 77px
+				color: #FFFFFF
+				margin-top: 44px
+				margin-bottom: 46px
+
+			.contacts-tabs
+
+				.gallery-tabs
+
+					.gallery-tabs-buttons
+						display: flex
+						flex-wrap: wrap
+						margin-bottom: 59px
+
+						.tab							
+							font-family: Gilroy
+							font-style: normal
+							font-weight: normal
+							font-size: 13px
+							line-height: 144.4%
+							color: rgba(255, 255, 255, 0.8)
+							display: block
+							padding: 17px 57px
+							box-sizing: border-box
+							background: #4799D5
+							transition: 0.3s
+							background: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03))
+							cursor: pointer
+
+						.tab.active
+							background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05))
+							backdrop-filter: blur(53px)
+
+					.tab-content
+						padding-bottom: 62px
+
+						.tab_item
+							display: flex
+
+							.tab_item-address								
+								font-family: Gilroy
+								font-style: normal
+								font-weight: normal
+								font-size: 16px
+								line-height: 177.4%
+								color: #FFFFFF
+								opacity: 0.7
+								max-width: 387px
+								margin-right: 85px
+
+							.tab_item-data	
+								font-family: Gilroy
+								font-style: normal
+								font-weight: normal
+								font-size: 16px
+								line-height: 177.4%
+								color: #FFFFFF
+
+								.tab_item-data-description
+									display: block
+									opacity: 0.7
+
+			.contacts-information-list
+				background: #1D2B59
+				padding-top: 45px
+				padding-bottom: 15px
+				display: flex
+				flex-wrap: wrap
+				justify-content: space-between	
+				box-sizing: content-box
+				padding-left: 300%
+				width: 100%
+				position: relative
+				left: -300%
+
+				.item
+					display: block
+					width: 30%
+					box-sizing: border-box
+					margin-bottom: 30px
+
+					.item-title
+						font-family: Gilroy
+						font-style: normal
+						font-weight: normal
+						font-size: 14px
+						line-height: 29px
+						color: #FFFFFF
+						opacity: 0.61
+						display: block
+						width: 100%
+
+					.item-link	
+						font-family: Gilroy
+						font-style: normal
+						font-weight: 600
+						font-size: 18px
+						line-height: 144.4%
+						color: #FFFFFF
+						display: inline-block
+
+		.contacts-information:before
+			content: ""
+			display: block
+			position: absolute;
+			width: 936.99px
+			height: 811.46px
+			left: -91px
+			top: -345px
+			background: rgba(92, 113, 209, 0.29)
+			filter: blur(165px)
+			transform: rotate(90.1deg)	
+
+
+		.contacts-map
+			flex-grow: 1
+
+			img 
+				display: block
+				width: 100%
+				height: 100%
+				flex: 0 0 auto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

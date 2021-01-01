@@ -203,6 +203,8 @@ $(function() {
 	};
 
 
+
+
 	// WOW animation
 
 	if ( $('.wow').length ) {

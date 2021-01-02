@@ -227,6 +227,27 @@ $(function() {
 
 	};
 
+
+	// open-close feedback-form
+
+	if ( $('.feedback-form-wrapper').length ) {
+
+		$('#open-feedback-form').click(function(e) {
+			e.preventDefault();
+
+			$('.feedback-form-wrapper').slideDown(300)
+
+		});
+
+		$('.feedback-form-wrapper .close-button').click(function() {		
+
+			$('.feedback-form-wrapper').slideUp(200)
+
+		});
+
+	};
+
+
 	
 
 

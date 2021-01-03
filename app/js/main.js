@@ -247,6 +247,14 @@ $(function() {
 
 	};
 
+	// custom select
+
+
+	if ( $('.service-centres-select').length ) {
+
+		$('.service-centres-select').selectric();
+
+	};
 
 	
 

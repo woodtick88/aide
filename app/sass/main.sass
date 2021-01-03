@@ -2844,6 +2844,325 @@ p
 	width: 0px
 
 
+// service-centres page
+
+
+// service-centres-header 
+
+
+.service-centres-header-wrapper
+	background: #162454	
+	overflow: hidden
+
+	.service-centres-header
+		padding-top: 43px
+		padding-bottom: 54px
+		position: relative
+
+		.title
+			font-family: Gilroy
+			font-style: normal
+			font-weight: bold
+			font-size: 43px
+			line-height: 77px
+			color: #FFFFFF
+			margin-bottom: 26px
+
+		.service-centres-form
+			width: 100%
+			display: flex
+
+			.form-button-wrapper
+				flex: 0 0 auto	
+
+				.form-button
+					font-family: Gilroy
+					font-style: normal
+					font-weight: bold
+					font-size: 16px
+					line-height: 19px
+					text-align: center
+					color: #FFFFFF
+					padding: 23px 20px
+					box-sizing: border-box
+					width: 288px
+					background: #4799D5
+					cursor: pointer
+					border: 2px solid #4799D5
+				
+			.selectric-wrapper	
+				width: 434px
+				box-sizing: border-box
+				margin-right: 20px
+
+			.selectric 
+				border: 3px solid rgba(255, 255, 255, 0.16)
+				border-radius: 0
+				background: #162454
+
+				.label
+					margin: 0
+					font-family: Gilroy
+					font-style: normal
+					font-weight: normal
+					font-size: 15px
+					line-height: 144.4%
+					color: #FFFFFF
+					height: auto
+					padding-left: 40px
+					padding-right: 71px
+					padding-top: 22px					
+					padding-bottom: 22px
+
+				.button
+					right: 0
+					top: 0
+					width: 71px
+					height: 100%
+					line-height: none
+					background-color: transparent
+					box-sizing: border-box
+					background: url(../img/service-centres-page/select-icon.svg) center no-repeat
+					transition: 0.6s
+
+				.button::after
+					display: none
+
+			.selectric-open	
+
+				.selectric 
+
+					.button
+						transform: rotate(180deg)	
+				
+	.service-centres-header:before
+		content: ""
+		display: block
+		position: absolute
+		width: 830.47px
+		height: 830.47px
+		left: -350px
+		top: -614px
+		background: rgba(92, 113, 209, 0.26)
+		filter: blur(165px)
+		transform: rotate(104.78deg)
+
+	.service-centres-header:after
+		content: ""
+		display: block	
+		position: absolute
+		width: 830.47px
+		height: 830.47px
+		left: 668px
+		top: -515px
+		background: rgba(92, 113, 209, 0.18)
+		filter: blur(165px)
+		transform: rotate(-175.21deg)
+
+
+// service-map-iamge 
+
+
+.service-map-iamge 
+	position: relative
+	max-height: 439px
+	overflow: hidden
+
+	img
+		display: block
+		width: 100%
+		height: auto
+		z-index: 1
+
+.service-map-iamge:before
+	content: ""
+	display: block
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	background: linear-gradient(180deg, #162454 5.77%, rgba(22, 36, 84, 0) 92.03%)
+	z-index: 2
+
+
+// service-centres-list
+
+
+.service-centres-list-wrapper
+	margin-top: -45px
+	margin-bottom: 88px
+	overflow: hidden
+
+	.service-centres-list
+		position: relative
+
+		.list-item
+			background: #FFFFFF
+			margin-bottom: 20px
+			display: flex
+			justify-content: flex-start
+			padding-left: 65px
+			padding-right: 65px
+			padding-top: 39px
+			padding-bottom: 50px
+
+			.item-title
+				font-family: Gilroy
+				font-style: normal
+				font-weight: bold
+				font-size: 27px
+				line-height: 149.6%
+				color: #0A083B
+				width: 324px
+				margin-right: 67px
+
+			.item-about	
+				flex-grow: 1
+
+				.item-address
+					font-family: Gilroy
+					font-style: normal
+					font-weight: 600
+					font-size: 14px
+					line-height: 27px
+					color: #4799D5
+					position: relative
+					margin-bottom: 21px
+					padding-left: 28px
+					max-width: 585px
+
+				.item-address:before
+					content: ""
+					display: block
+					position: absolute
+					width: 14px
+					height: 17px
+					background: url(../img/service-centres-page/address-icon.svg) center no-repeat
+					left: 0
+					top: 50%
+					transform: translateY(-50%)
+
+				.item-about-text
+					font-family: Gilroy
+					font-style: normal
+					font-weight: normal
+					font-size: 15px
+					line-height: 27px
+					color: #000000
+					opacity: 0.6
+					margin-bottom: 50px
+					max-width: 585px
+
+				.item-link
+					display: block										
+					font-family: Gilroy
+					font-style: normal
+					font-weight: 600
+					font-size: 14px
+					line-height: 17px
+					color: #3C86BC
+					position: relative
+					box-sizing: border-box
+					padding-right: 60px
+
+				.item-link:before
+					content: ""
+					display: block
+					position: absolute
+					width: 54px
+					height: 54px
+					background: url(../img/solutions-page/about-advantages-link-icon.svg) center no-repeat
+					right: -20px
+					top: 50%
+					transform: translateY(-50%)
+					border: 1px solid #3c86bc
+					border-radius: 50%
+
+	.service-centres-list:before
+		content: ""
+		display: block
+		position: absolute
+		width: 1101.69px
+		height: 1101.69px
+		left: -491px
+		top: 114px
+		background: rgba(60, 134, 188, 0.23)
+		filter: blur(165px)
+		transform: rotate(165deg)
+
+
+// service-centres-application
+
+
+.service-centres-application-wrapper
+	overflow: hidden
+	background: #4799D5
+
+	.service-centres-application
+		display: flex 
+		justify-content: space-between
+		position: relative
+		padding-top: 81px
+		padding-bottom: 90px
+
+		.title
+			flex-grow: 1
+			max-width: 760px
+			font-family: Gilroy
+			font-style: normal
+			font-weight: bold
+			font-size: 43px
+			line-height: 55px
+			color: #FFFFFF
+			box-sizing: border-box
+			padding-right: 20px
+
+		.application-button
+			display: inline-block
+			font-family: Gilroy
+			font-style: normal
+			font-weight: bold
+			font-size: 16px
+			line-height: 19px
+			text-align: center
+			color: #000000
+			background: #FFFFFF
+			border: 2px solid rgba(255, 255, 255, 0.2)
+			box-sizing: border-box
+			padding: 22px 46px
+			width: 289px
+			flex: 0 0 auto
+			align-self: flex-end
+			cursor: pointer
+			z-index: 2
+
+	.service-centres-application:before
+		content: ""
+		display: block
+		position: absolute
+		width: 1205.27px
+		height: 1106.08px
+		left: 386px
+		top: -583px
+		background: rgba(255, 255, 255, 0.24)
+		filter: blur(165px)
+		transform: matrix(0.18, 0.99, -0.97, 0.21, 0, 0)	
+		z-index: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -2527,7 +2527,7 @@ p
 					.tasks-item	
 						display: block
 						margin-bottom: 11px
-						
+
 						.tasks-link
 							display: block
 							font-family: Gilroy
@@ -2854,7 +2854,6 @@ p
 
 .service-centres-header-wrapper
 	background: #162454	
-	overflow: hidden
 
 	.service-centres-header
 		padding-top: 43px
@@ -2896,6 +2895,8 @@ p
 				width: 434px
 				box-sizing: border-box
 				margin-right: 20px
+				position: relative
+				z-index: 2
 
 			.selectric 
 				border: 3px solid rgba(255, 255, 255, 0.16)
@@ -2939,7 +2940,7 @@ p
 				
 	.service-centres-header:before
 		content: ""
-		display: block
+		display: none
 		position: absolute
 		width: 830.47px
 		height: 830.47px
@@ -2948,10 +2949,11 @@ p
 		background: rgba(92, 113, 209, 0.26)
 		filter: blur(165px)
 		transform: rotate(104.78deg)
+		
 
 	.service-centres-header:after
 		content: ""
-		display: block	
+		display: none	
 		position: absolute
 		width: 830.47px
 		height: 830.47px
@@ -2960,6 +2962,7 @@ p
 		background: rgba(92, 113, 209, 0.18)
 		filter: blur(165px)
 		transform: rotate(-175.21deg)
+
 
 
 // service-map-iamge 
@@ -2985,7 +2988,7 @@ p
 	top: 0
 	left: 0
 	background: linear-gradient(180deg, #162454 5.77%, rgba(22, 36, 84, 0) 92.03%)
-	z-index: 2
+	z-index: 1
 
 
 // service-centres-list

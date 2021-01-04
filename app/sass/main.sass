@@ -99,7 +99,6 @@ p
 	margin: 0 auto
 	box-sizing: content-box
 	position: relative
-	outline: 1px solid red
 	
 
 // index page
@@ -1801,7 +1800,6 @@ p
 
 			.tab-content
 				flex-grow: 1
-				outline: 1px solid green
 
 				.tab_item	
 
@@ -2080,6 +2078,7 @@ p
 							transition: 0.3s
 							background: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03))
 							cursor: pointer
+							z-index: 2
 
 						.tab.active
 							background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05))
@@ -2164,7 +2163,7 @@ p
 			background: rgba(92, 113, 209, 0.29)
 			filter: blur(165px)
 			transform: rotate(90.1deg)	
-
+			z-index: 1
 
 		.contacts-map
 			flex-grow: 1
@@ -2523,11 +2522,12 @@ p
 					box-shadow: 0 4px 44px rgba(60,134,188,.3)
 
 				.product-tasks-list
+					z-index: 2
 
 					.tasks-item	
 						display: block
 						margin-bottom: 11px
-
+						
 						.tasks-link
 							display: block
 							font-family: Gilroy
@@ -2542,6 +2542,8 @@ p
 							padding-top: 17px
 							padding-bottom: 17px
 							transition: 0.6s
+							z-index: 2
+							position: relative
 
 						.tasks-link:hover
 							color: #FFFFFF	
@@ -2562,6 +2564,7 @@ p
 				background: rgba(92, 113, 209, 0.22)
 				filter: blur(165px)
 				transform: matrix(0.2, 0.98, -0.98, 0.2, 0, 0)
+				z-index: 1
 
 	
 // product-comment
@@ -2737,7 +2740,6 @@ p
 		align-items: center
 		padding-left: 75px
 		padding-right: 75px
-		outline: 2px solid orange
 
 		.title			
 			font-family: Gilroy

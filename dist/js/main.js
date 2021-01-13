@@ -56,11 +56,11 @@ $(function() {
 				headerMenuWrapper.addClass("header-menu-wrapper-open");
 				$('.header-menu-wrapper').removeClass('scroll-nav');
 
-				subMenu.slideDown(300);
+				subMenu.slideDown();
 			} else {
 				$menuBtn.classList.remove("open");
 				headerMenuWrapper.removeClass("header-menu-wrapper-open");
-				subMenu.slideUp(200);
+				subMenu.slideUp(0);
 
 				const scrollNav = $('.header-menu-wrapper');
 				const scrollTop = $(window).scrollTop();

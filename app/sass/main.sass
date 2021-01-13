@@ -2270,6 +2270,8 @@ p
 		.industries-list-item
 			width: calc(50% - 9px)
 			margin-bottom: 24px
+			display: flex
+			flex-direction: column
 
 			.item-top-content
 				position: relative	
@@ -2307,6 +2309,10 @@ p
 				padding-bottom: 36px
 				padding-left: 66px
 				padding-right: 66px
+				flex-grow: 1
+				display: flex 
+				flex-direction: column
+				justify-content: space-between
 
 				.item-description
 					font-family: Gilroy
@@ -2328,6 +2334,8 @@ p
 					line-height: 160.7%
 					color: #3C86BC
 					position: relative
+					box-sizing: border-box
+					padding-right: 70px
 
 				.item-link:before
 					content: ""
@@ -3287,6 +3295,350 @@ p
 		background: rgba(92, 113, 209, 0.3)
 		filter: blur(165px)
 		transform: rotate(165deg)	
+
+
+// create-services-centres page
+
+
+// create-services-centres-header
+
+.create-services-centres-header-wrapper
+	background-image: linear-gradient(2.42deg, #162454 22.36%, rgba(22, 36, 84, 0.32) 108.8%), url(../img/create-services-centres/create-services-centres-header-background.jpg)
+	background-position: center
+	background-repeat: no-repeat 
+	background-size: cover	
+	overflow: hidden
+
+	.create-services-centres-header
+		padding-top: 123px
+		padding-bottom: 188px
+		position: relative
+
+		.breadcrumbs.breadcrumbs-dark
+			background: transparent
+
+		.title
+			font-family: Gilroy
+			font-style: normal
+			font-weight: bold
+			font-size: 63px
+			line-height: 77px
+			color: #FFFFFF
+			max-width: 738px
+			margin-top: 86px
+			margin-bottom: 32px
+
+		.description		
+			font-family: Gilroy
+			font-style: normal
+			font-weight: normal
+			font-size: 15px
+			line-height: 29px
+			color: #FFFFFF
+			opacity: 0.65
+			max-width: 634px
+			margin-bottom: 62px
+
+		.button-more
+			display: inline-block
+			font-family: Gilroy
+			font-style: normal
+			font-weight: bold
+			font-size: 16px
+			line-height: 19px
+			text-align: center
+			color: #FFFFFF		
+			background: #4799D5
+			box-sizing: border-box
+			padding: 22px 48px 
+			min-width: 300px
+
+	.create-services-centres-header:before
+		content: ""
+		display: block
+		position: absolute
+		width: 1101.69px
+		height: 1101.69px
+		left: -509px
+		top: 218px
+		background: rgba(92, 113, 209, 0.21)
+		filter: blur(165px)
+		transform: rotate(104.78deg)
+
+	.create-services-centres-header:after
+		content: ""
+		display: block	
+		position: absolute
+		width: 1101.69px
+		height: 1101.69px
+		left: 748px
+		top: -169px
+		background: rgba(92, 113, 209, 0.21)
+		filter: blur(165px)
+		transform: rotate(104.78deg)
+
+
+// expertise-container-create-services-centres
+
+
+.expertise-container.expertise-container-2.expertise-container-create-services-centres
+	margin-top: -85px
+
+	.expertise-wrapper
+		padding-top: 177px
+		margin-bottom: 100px
+
+		.expertise-wrapper-background
+			top: 85px
+
+		.expertise
+
+			.title
+				margin-bottom: 29px
+
+			.description
+				font-family: Gilroy
+				font-style: normal
+				font-weight: normal
+				font-size: 15px
+				line-height: 27px
+				color: #050509
+				opacity: 0.8
+				margin-bottom: 60px
+
+			.second-title								
+				font-family: Gilroy
+				font-style: normal
+				font-weight: bold
+				font-size: 27px
+				line-height: 149.6%
+				color: #161616
+				max-width: 443px
+				margin-bottom: 50px
+
+			.expertise-lists-wrapper
+				padding-top: 0	
+
+
+// create-services-centres-description
+
+
+.create-services-centres-description-wrapper
+	background: #4799D5
+	overflow: hidden
+
+	.create-services-centres-description
+		padding-top: 90px
+		padding-bottom: 123px
+		position: relative
+
+		.title
+			font-family: Gilroy
+			font-style: normal
+			font-weight: bold
+			font-size: 43px
+			line-height: 55px
+			color: #FFFFFF
+			max-width: 1118px
+			margin-bottom: 52px
+
+		.description
+			font-family: Gilroy
+			font-style: normal
+			font-weight: normal
+			font-size: 15px
+			line-height: 27px
+			color: #EEDCDC
+			max-width: 673px
+			margin-bottom: 81px
+
+		.description-list
+
+			.item	
+				background: linear-gradient(0deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.18))
+				display: flex 
+				justify-content: space-between	
+				padding-top: 51px
+				padding-bottom: 54px
+				padding-left: 64px
+				padding-right: 115px	
+				margin-bottom: 13px
+
+				.item-title
+					font-family: Gilroy
+					font-style: normal
+					font-weight: 600
+					font-size: 27px
+					line-height: 149.6%
+					color: #FFFFFF
+					flex-grow: 1
+					max-width: 443px
+
+				.item-about	
+					font-family: Gilroy
+					font-style: normal
+					font-weight: normal
+					font-size: 15px
+					line-height: 27px
+					color: #FFFFFF
+					width: 474px
+
+			.item:last-child	
+				margin-bottom: 0
+
+	.create-services-centres-description:before
+		content: ""
+		display: block
+		position: absolute
+		width: 1124.98px
+		height: 1102.64px
+		left: 638px
+		top: 98px
+		background: rgba(255, 255, 255, 0.2)
+		filter: blur(165px)
+		transform: matrix(0.19, 0.98, -0.98, 0.2, 0, 0)
+
+
+// create-services-centres-slider
+
+
+.create-services-centres-slider
+	padding-top: 206px
+	padding-bottom: 122px
+	overflow: hidden
+
+	.title		
+		font-family: Gilroy
+		font-style: normal
+		font-weight: bold
+		font-size: 43px
+		line-height: 55px
+		text-align: center
+		color: #0A083B
+		max-width: 664px
+		margin: 0 auto 
+		position: relative
+		padding-bottom: 68px
+
+	.title:before
+		content: ""
+		display: block
+		width: 65px
+		height: 65px
+		background: url(../img/index-page/about-service-support-icon.svg) center no-repeat
+		position: absolute
+		left: 50%
+		top: -94px
+		transform: translateX(-50%)
+		border-radius: 50%
+		box-shadow: 0 4px 44px rgba(60,134,188,.3)
+
+	.slider	
+		position: relative		
+
+		.item			
+			background: #F1F2F4
+			box-sizing: border-box
+			width: 588px
+			padding-top: 58px
+			padding-bottom: 50px
+			padding-left: 65px
+			padding-right: 65px	
+			cursor: pointer	
+			margin: 0 10px
+			position: relative
+
+			.number
+				font-family: Gilroy
+				font-style: normal
+				font-weight: normal
+				font-size: 63px
+				line-height: 50px
+				color: #3C86BC
+				margin-bottom: 35px
+
+			.description	
+				font-family: Gilroy
+				font-style: normal
+				font-weight: normal
+				font-size: 15px
+				line-height: 27px
+				color: #000000
+				opacity: 0.6
+				max-width: 366px
+
+		.item.slick-center
+			background: #FFFFFF	
+			box-shadow: 0px 0px 36px 12px rgba(71, 153, 213, 0.2)
+
+		.slick-track
+			display: flex
+
+		.slick-slide 
+			height: auto	
+
+		.slick-list
+			overflow: visible
+
+	
+// create-services-centres-application
+
+
+.create-services-centres-application-wrapper
+	background: #2E3D70
+	overflow: hidden
+
+	.create-services-centres-application
+		display: flex
+		justify-content: space-between
+		position: relative
+		padding-top: 82px
+		padding-bottom: 89px
+
+		.title
+			font-family: Gilroy
+			font-style: normal
+			font-weight: bold
+			font-size: 43px
+			line-height: 55px
+			color: #FFFFFF
+			flex-grow: 1
+			max-width: 821px
+			position: relative
+			z-index: 2
+
+		.application-button
+			font-family: Gilroy
+			font-style: normal
+			font-weight: bold
+			font-size: 16px
+			line-height: 19px
+			text-align: center
+			color: #000000
+			background: #FFFFFF
+			border: 2px solid rgba(255, 255, 255, 0.2)
+			box-sizing: border-box
+			padding: 22px 46px 
+			width: 289px
+			align-self: flex-end
+			position: relative
+			z-index: 2
+		
+	.create-services-centres-application:before
+		content: ""
+		display: block		
+		position: absolute
+		width: 1101.69px
+		height: 1101.69px
+		left: 520px
+		top: -359px
+		background: rgba(92, 113, 209, 0.31)
+		filter: blur(165px)
+		transform: rotate(78.62deg)
+		z-index: 1
+
+
+
 
 
 

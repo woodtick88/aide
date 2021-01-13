@@ -56,11 +56,11 @@ $(function() {
 				headerMenuWrapper.addClass("header-menu-wrapper-open");
 				$('.header-menu-wrapper').removeClass('scroll-nav');
 
-				subMenu.slideDown(300);
+				subMenu.slideDown();
 			} else {
 				$menuBtn.classList.remove("open");
 				headerMenuWrapper.removeClass("header-menu-wrapper-open");
-				subMenu.slideUp(200);
+				subMenu.slideUp(0);
 
 				const scrollNav = $('.header-menu-wrapper');
 				const scrollTop = $(window).scrollTop();
@@ -199,6 +199,23 @@ $(function() {
 			variableWidth: true
 		  });
 
+
+	};
+
+
+	// slider in create-services-centres-slider
+
+
+	if ( $('.create-services-centres-slider').length ) {
+
+		$('.create-services-centres-slider .slider').slick({
+			centerMode: true,
+			slidesToShow: 3,
+			dots: false,
+			arrows: false,
+			infinite: true,
+			speed: 300
+		  });
 
 	};
 

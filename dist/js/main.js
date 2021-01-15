@@ -177,7 +177,8 @@ $(function() {
 			speed: 300,
 			slidesToShow: 1,
 			centerMode: false,
-			variableWidth: true
+			variableWidth: true,
+			focusOnSelect: true
 		  });
 
 	};
@@ -196,9 +197,29 @@ $(function() {
 			speed: 300,
 			slidesToShow: 1,
 			centerMode: false,
-			variableWidth: true
+			variableWidth: true,
+			focusOnSelect: true
 		  });
 
+
+	};
+
+
+	// slider in create-services-centres-slider
+
+
+	if ( $('.create-services-centres-slider').length ) {
+
+		$('.create-services-centres-slider .slider').slick({
+			centerMode: true,
+			slidesToShow: 1,
+			dots: false,
+			arrows: false,
+			infinite: true,
+			variableWidth: true,
+			speed: 300,
+			focusOnSelect: true
+		});
 
 	};
 

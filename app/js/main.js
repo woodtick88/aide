@@ -177,7 +177,8 @@ $(function() {
 			speed: 300,
 			slidesToShow: 1,
 			centerMode: false,
-			variableWidth: true
+			variableWidth: true,
+			focusOnSelect: true
 		  });
 
 	};
@@ -196,7 +197,8 @@ $(function() {
 			speed: 300,
 			slidesToShow: 1,
 			centerMode: false,
-			variableWidth: true
+			variableWidth: true,
+			focusOnSelect: true
 		  });
 
 
@@ -210,12 +212,14 @@ $(function() {
 
 		$('.create-services-centres-slider .slider').slick({
 			centerMode: true,
-			slidesToShow: 3,
+			slidesToShow: 1,
 			dots: false,
 			arrows: false,
 			infinite: true,
-			speed: 300
-		  });
+			variableWidth: true,
+			speed: 300,
+			focusOnSelect: true
+		});
 
 	};
 

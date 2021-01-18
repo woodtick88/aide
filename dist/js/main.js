@@ -1,5 +1,9 @@
-$(function() { 		
-	
+
+
+
+;(function($){
+
+
 	$(window).scroll(function(){
 
 		// Scroll nav
@@ -146,7 +150,7 @@ $(function() {
 	
 		headeSlider.on('setPosition', function (event, slick) {	
 
-			const currentSlideHeight = $('.header .header-slider .header-slider-item-wrapper.slick-current').innerHeight();
+			let currentSlideHeight = $('.header-slider .header-slider-item-wrapper.slick-current').innerHeight();
 		
 			$('.header .header-slider .slick-list.draggable').animate({ 'height': currentSlideHeight + 'px' }, 400);
 
@@ -277,7 +281,6 @@ $(function() {
 
 	};
 
-	
 
 
 
@@ -285,10 +288,5 @@ $(function() {
 
 
 
-
-
-
-
-
-
-});
+   
+})(jQuery);

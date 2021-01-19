@@ -43,7 +43,7 @@ html, body
 *, *::before, *::after 
 	box-sizing: inherit
 	min-width: 0
-	min-height: 0	
+	min-height: 0		
 
 body
 	margin: 0
@@ -57,8 +57,7 @@ body
 	line-height: 16px
 	color: #0A083B
 	background-color: #E5E5E5
-	overflow-x: hidden
-	
+
 a 
 	text-decoration: none 
 	color: inherit	
@@ -405,18 +404,18 @@ p
 						line-height: 30px
 						color: #FFFFFF
 
-		.header-menu-wrapper-background-1
-			position: absolute
-			width: 1413.35px
-			height: 1224px
-			right: 265px
-			top: -391px
-			background: rgba(60, 134, 188, 0.25)
-			filter: blur(250px)
-			border-radius: 514.774px
-			transform: rotate(135deg)	
-			z-index: -1	
-			display: none				
+		// .header-menu-wrapper-background-1
+		// 	position: absolute
+		// 	width: 1413.35px
+		// 	height: 1224px
+		// 	right: 265px
+		// 	top: -391px
+		// 	background-color: rgba(60, 134, 188, 0.25)
+		// 	filter: blur(250px)
+		// 	border-radius: 514.774px
+		// 	transform: rotate(135deg)	
+		// 	z-index: -1	
+		// 	display: none				
 
 	.header-menu-wrapper.header-menu-wrapper-open
 		background: rgba(22, 36, 84, 0.97)
@@ -494,25 +493,25 @@ p
 					bottom: 0
 					left: 0
 					right: 0
+					background-image: linear-gradient(to top right, #162454 56.36%, rgba(22, 36, 84, 0.2) 188.8%)
 
 					.slider-background-image	
 						display: block
 						width: 100%	
-						height: 100%					
-
-				.slider-background-image-wrapper:before
-					content: ""
-					display: block
-					width: 100%
-					height: 100%
-					position: absolute
-					top: 0
-					left: 0
-					background-image: linear-gradient(to top right, #162454 46.36%, rgba(22, 36, 84, 0) 108.8%)
+						height: 100%
+						min-width: 1100px	
+						z-index: 1
+						opacity: 0.14	
+						position: relative
+						top: 50%
+						left: 50%
+						transform: translateY(-50%)	translateX(-50%)			
 				
+				// .slider-background-image-wrapper:before
+
 				.slider-background-image-wrapper:after
 					content: ""
-					display: block
+					display: none
 					position: absolute
 					bottom: -482px
 					left: -380px
@@ -535,6 +534,8 @@ p
 						color: #FFF
 						max-width: 738px
 						margin-bottom: 18px
+						position: relative
+						z-index: 2
 
 					.header-slider-description
 						font-family: Gilroy
@@ -545,6 +546,8 @@ p
 						color: rgba(255,255,255,0.61)
 						max-width: 500px
 						margin-bottom: 45px
+						position: relative
+						z-index: 2
 
 					.header-slider-read-case
 						font-family: Gilroy
@@ -557,6 +560,8 @@ p
 						display: inline-block 
 						padding: 22px 48px
 						background: #4799D5
+						position: relative
+						z-index: 2
 
 			.slick-dots 
 				bottom: 190px
@@ -605,6 +610,7 @@ p
 			left: 0 
 			width: 100%		
 			overflow-x: auto 	
+			z-index: 2
 
 			.header-slider-custom-dots
 				width: 100%
@@ -891,7 +897,7 @@ p
 
 	.advantages:before 
 		content: ""
-		display: block
+		display: none
 		position: absolute
 		width: 1101.69px
 		height: 1101.69px
@@ -1059,6 +1065,7 @@ p
 		background: rgba(255, 255, 255, 0.24)
 		filter: blur(165px)
 		transform: matrix(0.19, 0.98, -0.98, 0.2, 0, 0)
+		display: none
 
 .offer-wrapper.offer-wrapper-2	
 
@@ -1269,7 +1276,7 @@ p
 			padding-top: 31px	
 			padding-bottom: 39px		
 			padding-left: 64px	
-			background-color: #fff				
+			background-color: #fff		
 
 			.description			
 				font-family: Gilroy
@@ -1371,7 +1378,7 @@ p
 
 	.submit-application:before
 		content: ""
-		display: block 
+		display: none 
 		width: 1206px
 		height: 1106px 
 		position: absolute
@@ -3639,9 +3646,6 @@ p
 		filter: blur(165px)
 		transform: rotate(78.62deg)
 		z-index: 1
-
-
-
 
 
 

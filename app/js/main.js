@@ -156,11 +156,13 @@
 
 		});;
 
-		headeSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){	
+		// headeSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){	
 
-			new WOW().init();
+		// 	new WOW().init({
+		// 		mobile: false
+		// 	});
 
-		});
+		// });
 
 
 
@@ -234,7 +236,15 @@
 
 	if ( $('.wow').length ) {
 
-		new WOW().init();
+		if ( $( window ).width() >= 768 ) {
+
+			new WOW().init({
+				mobile: false
+			});
+
+		};
+
+		
 
 	};
 
@@ -282,9 +292,18 @@
 	};
 
 
+	// safari fix
 
 
+	// const is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
+	// console.log( "test-2", is_safari );
+
+	// if ( is_safari ) {
+
+	// 	$('body').addClass('safari');
+
+	// };
 
 
 
